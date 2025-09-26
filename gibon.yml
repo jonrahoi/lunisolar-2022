@@ -1,0 +1,3 @@
+# Commands used by the gibon autonomous coding agent to validate work during coding sessions
+dependencies: npm ci  # Install project dependencies
+build: npm run build  # Build the React application for production

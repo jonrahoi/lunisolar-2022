@@ -1,0 +1,177 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app-header {
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(45deg, #ff6b35, #f7931e, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app-header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.app-main {
+  margin-bottom: 2rem;
+}
+
+.app-footer {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+.lunisolar-calendar {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.calendar-header {
+  margin-bottom: 2rem;
+}
+
+.calendar-header h2 {
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+.current-date {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background: rgba(255, 215, 0, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.calendar-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-button, .today-button {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover, .today-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.today-button {
+  background: rgba(255, 215, 0, 0.1);
+  border-color: rgba(255, 215, 0, 0.3);
+  font-weight: 600;
+}
+
+.today-button:hover {
+  background: rgba(255, 215, 0, 0.2);
+  border-color: rgba(255, 215, 0, 0.5);
+}
+
+.calendar-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.info-section {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #ff6b35;
+}
+
+.info-section p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .app-header h1 {
+    background: linear-gradient(45deg, #d63384, #fd7e14, #ffc107);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .lunisolar-calendar {
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .current-date {
+    background: rgba(255, 193, 7, 0.1);
+    border-color: rgba(255, 193, 7, 0.3);
+  }
+  
+  .nav-button, .today-button {
+    border-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.02);
+  }
+  
+  .nav-button:hover, .today-button:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .today-button {
+    background: rgba(255, 193, 7, 0.1);
+    border-color: rgba(255, 193, 7, 0.3);
+  }
+  
+  .today-button:hover {
+    background: rgba(255, 193, 7, 0.2);
+    border-color: rgba(255, 193, 7, 0.4);
+  }
+  
+  .info-section {
+    background: rgba(0, 0, 0, 0.02);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar-header h2 {
+    color: #d63384;
+  }
+  
+  .info-section h3 {
+    color: #fd7e14;
+  }
+  
+  .app-footer {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+}
